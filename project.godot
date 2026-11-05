@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Firstlight"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7")
+
+[autoload]
+
+GameState="*res://scripts/autoloads/game_state.gd"
+UITheme="*res://scripts/autoloads/ui_theme.gd"
+Settings="*res://scripts/autoloads/settings.gd"
+Inventory="*res://scripts/autoloads/inventory.gd"
+Crafting="*res://scripts/autoloads/crafting.gd"
+Equipment="*res://scripts/autoloads/equipment.gd"
+Stats="*res://scripts/autoloads/stats.gd"
+Building="*res://scripts/autoloads/building.gd"
+Survival="*res://scripts/autoloads/survival.gd"
+HUD="*res://scripts/autoloads/hud.gd"
+BuildCatalog="*res://scripts/autoloads/build_catalog.gd"
+SaveGame="*res://scripts/autoloads/save_game.gd"
+PauseMenu="*res://scripts/autoloads/pause_menu.gd"
+StorageUI="*res://scripts/autoloads/storage_ui.gd"
+ProjectilePool="*res://scripts/autoloads/projectile_pool.gd"
+PowerGrid="*res://scripts/autoloads/power_grid.gd"
+DayNight="*res://scripts/autoloads/day_night.gd"
+RadialMenu="*res://scripts/autoloads/radial_menu.gd"
+Audio="*res://scripts/autoloads/audio_manager.gd"
+Journal="*res://scripts/autoloads/journal.gd"
+LandHealth="*res://scripts/autoloads/land_health.gd"
+Playtest="*res://scripts/autoloads/playtest_log.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+renderer/rendering_method.mobile="gl_compatibility"
